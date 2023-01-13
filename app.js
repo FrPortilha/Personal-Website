@@ -1,4 +1,5 @@
 const menuButton = document.getElementById("menu-button");
+const logoButton = document.getElementById("logo-button");
 const menuList = document.querySelector("nav ul");
 const menuItems = document.querySelectorAll("ul li");
 
@@ -10,3 +11,5 @@ menuButton.addEventListener("click", function() {
         }
     },500)
 });
+
+

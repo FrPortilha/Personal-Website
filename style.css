@@ -8,11 +8,12 @@
 
 /* Add a background color and some padding to the body */
 body {
-    background-color: #333;
+    background-color: rgb(45, 46, 49);
     width: 100vw;
     height: 300vh;
     font-family: Arial, sans-serif;
     overflow-x: hidden;
+    color: white;
 }
 
 .container {
@@ -23,17 +24,54 @@ body {
 }
 
 section{
-    background-color: pink;
-    display:flex;
-    justify-content: center;
-    align-items: center;
+    display:block;
     width: 100vw;
     height: 100vh;
     scroll-snap-align: start;
+    justify-content: center;
+}
+
+section:first-of-type .greet {
+    position: relative;
+    top: 15vh;
+    left: 0vw;
+    padding-left: 10vw;
+    font-size:30px;
+    text-align: left;
+    display: flex;
+    justify-content: left;
+    color:#de8023a8;
+    font-family:'Times New Roman', Times, serif;
+}
+
+section:first-of-type .intro {
+    position: relative;
+    top: 20vh;
+    left: 0vw;
+    padding-left: 15vw;
+    font-size: 50px;
+    font-weight: bolder;
+    text-align: left;
+    display: flex;
+    justify-content: left;
+    color: #e4801c;
+    font-family:'Times New Roman', Times, serif;
+}
+section:first-of-type .info {
+    position: relative;
+    top: 25vh;
+    left: 0vw;
+    padding-left: 8vw;
+    font-size: 40px;
+    text-align: left;
+    display: flex;
+    justify-content: left;
+    max-width: min(70vw,1200px);
+    color: #e3ba90a7;
+    font-family:'Times New Roman', Times, serif;
 }
 
 section:nth-of-type(1){
-    background-color: #282828;
     color: olivedrab;
 }
 
@@ -47,17 +85,201 @@ section:nth-of-type(3){
     color: rgb(131, 183, 29);
 }
 
+.title-section{
+    position: relative;
+    left: 16vw;
+    padding: 10px;
+    font-size:  min(56px,8vw);
+    font-weight:bolder;
+    text-align: left;
+    display: flex;
+    justify-content: left;
+    color: #e48321df;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
+}
+
+.title-section-smaller{
+    position: relative;
+    left: 12vw;
+    padding: 2vw;
+    font-size: min(38px,6.5vw);
+    font-weight:bolder;
+    text-align: left;
+    display: flex;
+    justify-content: left;
+    color: #e48321df;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
+}
+
+.about-text{
+    position: relative;
+    left: 5vw;
+    padding: min(4vw,40px);
+    font-size: min(28px,4vw);
+    text-align: left;
+    list-style: none;
+    justify-content: left;
+    max-width: min(60vw,1200px);
+    color: #e6cdb4dc;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    
+}
+
+.about-text a {
+    padding-left: 5vw;
+    font-size: 95%;
+    font-weight: 300;
+    color: #e6cdb4dc;
+    
+    
+}
+
+.about-text a1 {
+    font-size: 120%;
+    font-weight: 300;
+    color: #ff860ce0;
+    
+}
+
+.about-text li{
+    margin-bottom: 10vh;
+}
+
+.about-container {
+    width: 100vw;
+    display: grid;
+    column-gap: 20px;
+    row-gap: 2px;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows:  1fr 1fr;
+}
+
+.about-intro {
+    width: 70vw;
+    height: 100vh;
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+    justify-items: end;
+}
+
+.about-left {
+    width: 70vw;
+    grid-column: 1 / 2;
+    grid-row: 2 / 4;
+    justify-items: end;
+}
+.about-right {
+    padding-top: 10vh;
+    width: 30vw;
+    height: 100vh;
+    /*background-color: blue;*/
+    grid-column: 2 / 3;
+    grid-row: 1 / 3;
+    justify-items: end;
+    justify-content: end;
+    align-items: end;
+
+}
+.profile{
+    display: block;
+    right: 0;
+    width: auto;
+    height: auto;
+    border-radius: 10vh;
+    transform: scale( );
+}
+
+.about-text-education{
+    position: relative;
+    left: 5vw;
+    padding: 2vw;
+    font-size:  min(20px,3vw);
+    font-weight: 100;
+    text-align: left;
+    display: block;
+    justify-content: left;
+    max-width: min(60vw,1200px);
+    color: #e6cdb4dc;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
+}
+
+.about-text-education a {
+    font-size: 130%;
+    font-weight: 300;
+    color: #fda751c7;
+}
+.about-text-education a1 {
+    font-size: 115%;
+    font-weight: 300;
+    color: #ff860ce0;
+}
+
+.about-text-education a2 {
+    font-size: 115%;
+    font-weight: 300;
+    color: #efa861c7;
+}
+
+.about-text-education d {
+    font-size: 90%;
+    font-weight: 300;
+    color: #fdb166c7;
+}
+
+.project-box{
+    position: relative;
+    top: 12vh;
+    left: 10vw;
+    padding: 8vw;
+    font-size: 26px;
+    text-align: left;
+    display: block;
+    justify-content: left;
+    max-width: 60vw;
+    color: #e4832176;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
+}
+
+.project-image{
+    margin: 3vh;
+    text-indent: -200vw;
+    background: url('proj image.png');
+    width: 400px;
+    height: 400px;
+}
+
+.contact-container{
+    display: grid;
+}
+
+.contact-left {
+    width: 46vw;
+    grid-column: 1 / 2;
+    grid-row: 2 / 4;
+    justify-items: end;
+}
+
+#logo-button {
+    margin: max(4vh,3vw);
+    text-indent: -200vw;
+    background-color: transparent;
+    background-image: url('logo F grey.png');
+    background-size: min(8vw,8vh);
+    height: min(7.45vh,7.45vw);
+    width: min(8vh,8vw);
+    cursor: pointer;
+    border: none;
+}
 
 nav {
     display: flex;
     justify-content: space-between;
 }
 
-
 /* Style the "Menu" button */
 #menu-button {
     position: absolute;
-    top:2vh;
+    top:4vh;
     right: 5vw;
     background-color: transparent;
     border: none;
@@ -95,9 +317,7 @@ nav ul {
 nav ul.show{
     display: flex;
     opacity: 1;
-    
 }
-
 
 ul li {
     opacity: 1;
@@ -105,7 +325,6 @@ ul li {
     margin-bottom: 50px; /* Add a margin-bottom between the menu items */
     font-weight: bold; /* Make the menu items bold */
 }
-
 
 ul li.show{
     display: flex;
@@ -121,20 +340,14 @@ ul li a {
     transition: all 0.3s ease-in-out;
 }
 
-
 ul li a:hover {
     padding: 60px 5px ;
     font-size: 56px;
     color: rgb(244, 188, 140);
 }
 
-/* Style the main content area */
-.wrapper {
-    max-width: 80vw;
-    margin: 0 auto;
-    padding: 20px;
-}
 h1 {
     font-size: 10em;
     margin-bottom: 20px;
 }
+
