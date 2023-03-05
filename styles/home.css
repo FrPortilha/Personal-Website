@@ -3,11 +3,31 @@
     display:block;
     width: 100vw;
     height: 100vh;
-    scroll-snap-align: start;
     justify-content: center;
     font-size:  min(56px,10vw);
 }
 
+#reveal1 {
+    opacity: 0;
+    -webkit-transform: scale(0.9);
+         -moz-transform: scale(0.9);
+            -ms-transform: scale(0.9);
+             -o-transform: scale(0.9);
+                    transform: scale(0.9);
+    -webkit-transition: all 1s ease-in-out;
+         -moz-transition: all 1s ease-in-out;
+            -ms-transition: all 1s ease-in-out;
+             -o-transition: all 1s ease-in-out;
+                    transition: all 1s ease-in-out;
+}
+#reveal1.visible {
+    opacity: 1;
+    -webkit-transform: none;
+         -moz-transform: none;
+            -ms-transform: none;
+             -o-transform: none;
+                    transform: none;
+}
 .greet {
     position: relative;
     top: 15vh;
@@ -20,11 +40,12 @@
     justify-content: left;
     color: #e6e6e6;
     font-family:Georgia, 'Times New Roman', Times, serif;
-    animation-duration: 3s;
-    animation-timing-function: ease-in;
+    animation-duration: 2.5s;
+    display: none;
 }
+
 .greet .show{
-    opacity: 1;
+    display: flex;
 }
 
 .intro {
@@ -39,9 +60,12 @@
     justify-content: left;
     color: #de6f00;
     font-family:'Times New Roman', Times, serif;
+    animation-duration: 2s;
+    display:none;
+}
 
-    animation-duration: 10s;
-    animation-timing-function:cubic-bezier(0.25, 0.46, 0.45, 0.94)
+.intro .show{
+    display:flex
 }
 
 .intro a1{
@@ -65,8 +89,11 @@
     color: #a0a0a0;
     font-family:'Times New Roman', Times, serif;
     list-style: none;
-    animation-duration: 10s;
-    animation-timing-function:cubic-bezier(0.25, 0.46, 0.45, 0.94)
+    display:none
+}
+
+.info .show{
+    display:flex
 }
 
 .info a1{
