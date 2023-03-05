@@ -20,7 +20,8 @@
     justify-content: left;
     color: #e6e6e6;
     font-family:Georgia, 'Times New Roman', Times, serif;
-    opacity: 0;
+    animation-duration: 3s;
+    animation-timing-function: ease-in;
 }
 .greet .show{
     opacity: 1;
@@ -39,7 +40,8 @@
     color: #de6f00;
     font-family:'Times New Roman', Times, serif;
 
-    animation-delay: 5s;
+    animation-duration: 10s;
+    animation-timing-function:cubic-bezier(0.25, 0.46, 0.45, 0.94)
 }
 
 .intro a1{
@@ -63,7 +65,8 @@
     color: #a0a0a0;
     font-family:'Times New Roman', Times, serif;
     list-style: none;
-    animation-delay: 7s;
+    animation-duration: 10s;
+    animation-timing-function:cubic-bezier(0.25, 0.46, 0.45, 0.94)
 }
 
 .info a1{
