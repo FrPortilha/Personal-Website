@@ -1,5 +1,38 @@
+@keyframes fadeInFromR {
+    from {
+        opacity: 0;
+        transform: scale(0.6) translateX(+200px);
+        color: #a0a0a000;
+    }
+    
+    to {
+        opacity: 1;
+        transform: none;
+    }
+}
 
-.section-home{
+@keyframes fadeInFromB {
+    from {
+        opacity: 0;
+        transform: scale(0.6) translateY(-20px) translateX(-200px);
+        color: #a0a0a000;
+    }
+    
+    to {
+        opacity: 1;
+        transform: none;
+    }
+}
+
+.fadeInFromR {
+    animation: fadeInFromR 2s ease-out
+}
+
+.fadeInFromB {
+    animation: fadeInFromB 2s ease-out;
+}
+
+.section-home {
     display:block;
     width: 100vw;
     height: 100vh;
@@ -31,8 +64,8 @@
 .greet {
     position: relative;
     top: 15vh;
-    left: 0vw;
-    padding-left: 12vw;
+    left: 12vw;
+    padding-left: 1vw;
     padding-right: 12vw;
     font-size:  min(56px,8vw);
     text-align: left;
@@ -41,18 +74,14 @@
     color: #e6e6e6;
     font-family:Georgia, 'Times New Roman', Times, serif;
     animation-duration: 2.5s;
-    display: none;
-}
-
-.greet .show{
-    display: flex;
+    
 }
 
 .intro {
     position: relative;
     top: 20vh;
-    left: 0vw;
-    padding-left: 15vw;
+    left: 15vw;
+    padding-left: 1vw;
     font-size:  min(60px,11vw);
     font-weight: bolder;
     text-align: left;
@@ -60,13 +89,9 @@
     justify-content: left;
     color: #de6f00;
     font-family:'Times New Roman', Times, serif;
-    animation-duration: 2s;
-    display:none;
+    animation-duration: 4s;
 }
 
-.intro .show{
-    display:flex
-}
 
 .intro a1{
     transition: all 0.2s ease-in-out ;
@@ -86,10 +111,11 @@
     display: flex;
     justify-content: left;
     max-width: min(70vw,1200px);
-    color: #a0a0a0;
+    color: #cecece;
     font-family:'Times New Roman', Times, serif;
     list-style: none;
-    display:none
+    animation-duration: 3s;
+    animation-delay: 2s;
 }
 
 .info .show{
