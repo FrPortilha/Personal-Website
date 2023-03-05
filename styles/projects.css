@@ -1,0 +1,22 @@
+
+.project-box{
+    position: relative;
+    top: 12vh;
+    left: 10vw;
+    padding: 8vw;
+    font-size: 26px;
+    text-align: left;
+    display: block;
+    justify-content: left;
+    max-width: 60vw;
+    color: #e4832176;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
+}
+
+.project-image{
+    margin: 3vh;
+    text-indent: -200vw;
+    background: url('../images/proj image.png');
+    width: 400px;
+    height: 400px;
+}  

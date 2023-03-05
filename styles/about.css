@@ -1,0 +1,122 @@
+
+.section{
+    display:block;
+    width: 100vw;
+    min-height: 100vh;
+    scroll-snap-align: start;
+    justify-content: center;
+}
+
+.text{
+    position: relative;
+    left: 5vw;
+    padding: min(5vw,50px);
+    font-size: min(28px,4vw);
+    text-align: left;
+    list-style: none;
+    justify-content: left;
+    max-width: min(60vw,1200px);
+    color: #e6cdb4dc;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    
+}
+
+.text a {
+    color: #e6cdb4dc;
+    transition: all 0.1s ease-in-out;
+}
+
+.text a:hover {
+    color: #feb871e0;
+    font-size:105%;
+    font-weight: 200;
+}
+
+.text a1 {
+    font-size: 120%;
+    font-weight: 300;
+    color: #ff860ce0;
+    
+}
+
+.text li{
+    margin-bottom: 5vh;
+    line-height: 5vh;
+    padding: min(1vw,1vh);
+}
+
+.about-container {
+    width: 100vw;
+    display: grid;
+    column-gap: 20px;
+    row-gap: 2px;
+    grid-template-columns: repeat(auto-fit,minmax(400px,1fr));
+    
+}
+
+.intro {
+    padding: 2vw;
+}
+
+.photo {
+    padding-left: 2vw;
+    padding-right: 0;
+    padding-bottom: 5vh;
+    width: min(90%,calc(0.61 * 90vh));
+    justify-self: end;
+}
+
+.left {
+    padding: min(1vw,1vh);
+}
+
+.profile{
+    
+    align-self:start;
+    width: 100%;
+    aspect-ratio: 0.61;
+    object-fit: cover;
+    border-radius: min(2.5vh,2.5vw);
+    
+}
+
+.text-education{
+    position: relative;
+    left: 5vw;
+    padding: 2vw;
+    font-size:  min(20px,3vw);
+    font-weight: 100;
+    text-align: left;
+    display: block;
+    justify-content: left;
+    max-width:min(90%,1400px);
+    color: #e6cdb4dc;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
+}
+
+.text-education li {
+    margin-bottom: 15px;
+}
+.text-education a {
+    font-size: 130%;
+    font-weight: 300;
+    color: #fda751c7;
+}
+
+.text-education a1 {
+    font-size: 115%;
+    font-weight: 300;
+    color: #ff860ce0;
+}
+
+.text-education a2 {
+    font-size: 115%;
+    font-weight: 300;
+    color: #efa861c7;
+}
+
+.text-education d {
+    font-size: 90%;
+    font-weight: 300;
+    color: #fdb166c7;
+}

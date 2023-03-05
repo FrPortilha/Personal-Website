@@ -1,15 +1,20 @@
 const menuButton = document.getElementById("menu-button");
-const logoButton = document.getElementById("logo-button");
 const menuList = document.querySelector("nav ul");
 const menuItems = document.querySelectorAll("ul li");
 
-menuButton.addEventListener("click", function() {
-    menuList.classList.toggle("show");
+menuButton.addEventListener("click", () => {
+    
     setTimeout(() => {
-        for (i in 0,menuItems.length()){
+        menuList.classList.toggle("show");
+        
+    },200)
+
+    setTimeout(() => {
+        for (let i = 0 ; i < menuItems.length();i++){
             menuItems[i].classList.toggle("show");
         }
-    },500)
+    },1000)
 });
+
 
 

@@ -2,8 +2,9 @@
 <html>
   <head>
     <title>Francisco | About</title>
-    <link rel="icon" type="image/x-icon" href="logo-F-grey.ico">
-    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="icon" type="image/x-icon" href="../images/logo-F-grey.ico">
+    <link rel="stylesheet" type="text/css" href="../styles/style.css">
+    <link rel="stylesheet" type="text/css" href="../styles/about.css">
   </head>
   <body>
 
@@ -11,8 +12,9 @@
       <nav>
 
           <button id="menu-button">Menu</button>
+          <button id="lang-button">En</button>
           <ul>
-            <li><a href="index.html">Home</a></li>
+            <li><a href="home.html">Home</a></li>
             <li><a href="projects.html">Projects</a></li>
             <li><a href="about.html">About Me</a></li>
             <li><a href="contact.html">Contact</a></li>
@@ -23,25 +25,25 @@
 
     <div class="container">
 
-      <section class="about-section">
-      <a href="index.html"><button id="logo-button"></button></a>
+      <section class="section">
+      <a href="home.html"><button id="logo-button"></button></a>
         <div class="about-container">
 
-          <div class="about-intro">
+          <div class="intro">
             <div class="title">About Me</div>
-            <div class="about-text">
+            <div class="text">
               <li>
               Hello I'm Francisco, an Econometrics and Economics student in the Netherlands.
               My academic interests lie in <a1>Policy Economics</a1>, Impact Evaluation, <a1>Data Science</a1> and Programming but mainly
-              in <a1>Econometric Modelling,</a1> Simulation and Nowcasting. But I'm also interested in politics, mathematics
+              in <a1>Econometric Modelling,</a1> Simulation and Nowcasting. I'm also interested in politics, mathematics
               and music. 
               </li>
               <li>Download my <a href="Francisco CV" download> resume</a></li>
             </div>
           </div>  
 
-          <div class="about-photo">
-            <img src="profile.jpeg" class="profile" ></image>
+          <div class="photo">
+            <img src="../images/profile.jpeg" class="profile" ></image>
           </div> 
 
         </div>
@@ -49,9 +51,9 @@
       
         
           <div class="title-smaller">About My Education</div>
-          <div class="about-text-education">  
+          <div class="text-education">  
 
-            <a> Double Bachelor in Econometrics and  Economics (BSc2) - 2024 <p><d>Erasmus University Rotterdam</d>  </p></a>
+            <a> Double Bachelor in Econometrics and  Economics (BSc2) - 2023 <p><d>Erasmus University Rotterdam</d>  </p></a>
 
             <li>
               <a1>Major in Policy Economics </a1>- Learned methods for <a2>impact evaluation</a2> (fixed effects, DiD, IV, RDD), and 
@@ -60,7 +62,7 @@
             </li> 
             <li>
               <a1>Minor in Advanced Computer Science </a1> -  Learned about <a2>relational databases,</a2> formal relational query 
-              languages to express data, determination of optimal databases, working with <a2>SQL</a2> software, <a2>machine 
+              languages, determination of optimal databases, working with <a2>SQL</a2> software, <a2>machine 
               learning</a2> methods for classification (decision trees and SVM) and clustering (k-means and hierarchical 
               clustering), recursion, computational time BigO notation, and <a2>semantic web</a2> languages for storing and 
               querying data (XLM, DTD, XPath, XQuery, XSLT, RDF, RDFS).
@@ -68,7 +70,7 @@
 
             <li>
               <a1>International Bachelor of Econometrics and Operations Research</a1>- Learned about the core of <a2>mathematics</a2> and <a2>statistics,</a2> then more 
-              advanced topics in <a2>econometrics</a2> : multivariate statistics, econometrics 1 (OLS,  NOLS), simulation, economectrics 2 
+              advanced topics in <a2>econometrics</a2> : multivariate statistics, econometrics 1 (OLS,  NOLS), simulation, econometrics 2 
               (diagnostic tests, model adjustments and qualitative variable models), <a2>markov chains</a2>, marketing and <a2>time
               series</a2>.  Also had various courses on programming which taught Java, the statistics and mathematics courses
               taught R and Matlab, and the econometrics courses taught how to work with <a2>Eviews.</a2>
@@ -82,7 +84,14 @@
       
       
           <div class="title-smaller">About My Experience</div>
-          <div class="about-text-education">
+          <div class="text-education">
+            <a> Chair of Data Consulting Committee - EFR <p> <d>February 2023 to Present</d></p></a>
+            <li>
+              Part of the data consulting committee of EFR. Consulting the board of the biggest european student 
+              association on startegy by doing data analysis
+            </li>
+          </div>
+          <div class="text-education">
             <a> Junior Software Developer - Leaflets.io <p> <d>May 2022 to August 2022<d> </p></a>
             
             <li>
@@ -102,6 +111,6 @@
       
       </div>
     </div>
-    <script src="app.js" ></script>
+    <script src="../app.js" ></script>
   </body>
 </html>
