@@ -82,7 +82,7 @@ nav ul {
     height: 100vh;
     background-color: #000c20ef;
     color: #fff;
-    padding: 20vh;
+    padding: 20px;
     z-index: 1;
     flex-direction: column; /* Change the direction of the menu items */
     align-items: center; /* Align the menu items to the left */
@@ -96,14 +96,10 @@ nav ul.show{
 }
 
 nav ul li {
-    opacity: 1;
     margin-bottom: 50px; /* Add a margin-bottom between the menu items */
     font-weight: bold; /* Make the menu items bold */
 }
 
-nav ul li.show{
-    display:block;
-}
 
 nav ul li a {
     font-size: 4rem; /* Increase the font size of the menu items */
@@ -116,7 +112,7 @@ nav ul li a {
 
 nav ul li a:hover {
     padding: 60px 5px ;
-    font-size: 4.5rem;
+    font-size: 4rem;
     color: rgb(244, 188, 140);
 }
 
