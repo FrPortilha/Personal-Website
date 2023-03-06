@@ -86,7 +86,6 @@ nav ul {
     z-index: 1;
     flex-direction: column; /* Change the direction of the menu items */
     align-items: center; /* Align the menu items to the left */
-    justify-items: center;
     opacity: 0; /* Make the menu list invisible by default */
     
 }
@@ -96,18 +95,17 @@ nav ul.show{
     opacity: 1
 }
 
-ul li {
+nav ul li {
     opacity: 1;
-    list-style: none;
     margin-bottom: 50px; /* Add a margin-bottom between the menu items */
     font-weight: bold; /* Make the menu items bold */
 }
 
-ul li.show{
+nav ul li.show{
     display:block;
 }
 
-ul li a {
+nav ul li a {
     font-size: 4rem; /* Increase the font size of the menu items */
     color: #fff;
     font-family: arial;
@@ -116,7 +114,7 @@ ul li a {
     transition: all 0.3s ease-in-out;
 }
 
-ul li a:hover {
+nav ul li a:hover {
     padding: 60px 5px ;
     font-size: 4.5rem;
     color: rgb(244, 188, 140);

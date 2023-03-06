@@ -28,10 +28,6 @@
     justify-self: end;
 }
 
-.left {
-    padding: min(1vw,1vh);
-}
-
 .profile{
     
     align-self:start;

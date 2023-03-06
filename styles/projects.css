@@ -1,22 +1,74 @@
-
-.project-box{
+.project-container {
+    background-color: blueviolet;
     position: relative;
-    top: 12vh;
-    left: 10vw;
-    padding: 8vw;
-    font-size: 26px;
-    text-align: left;
-    display: block;
-    justify-content: left;
-    max-width: 60vw;
-    color: #e4832176;
-    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
+    padding: 20px;
+    width: 100vw;
+    width: 100vw;
+    display: grid;
+    column-gap: 20px;
+    row-gap: 2px;
+    grid-template-columns: repeat(auto-fit,minmax(400px,1fr));
 }
 
-.project-image{
+.project-box {
+    background-color: aquamarine;
+    justify-self: center;
+    font-size: 26px;
+    text-align: center;
+    color: #e4832176;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    max-width: 800px;
+}
+
+.project-list {
+    background-color: rgb(169, 55, 35);
+    display: flex;
+}
+
+.project-list ul {
+    background-color: rgb(62, 62, 2);
+    padding: 20px;
+    width: min(100%,1000px);
+    justify-self: end;
+    flex-direction: column; /* Change the direction of the menu items */
+    
+}
+
+.project-list ul li {
+    text-align: center;
+    font-size: 2rem; /* Increase the font size of the menu items */
+    color: #ffffff92;
+    font-family: arial;
+    padding: 30px;
+    border: 1px solid  #ffffff92;
+    border-radius: 10px;
+    transition: all 0.3s ease-out;
+    
+}
+
+.project-list ul li:hover {
+    color: #fff;
+    border: 2.5px solid white;
+}
+
+.project-image {
     margin: 3vh;
     text-indent: -200vw;
     background: url('../images/proj image.png');
-    width: 400px;
-    height: 400px;
+    width: min(50vh,100vw);
+    height: min(50vh,100vw);
 }  
+
+.text{
+    position: relative;
+    left: 5vw;
+    padding:15px;
+    font-size: 2.2rem;
+    text-align: left;
+    list-style: none;
+    justify-content: left;
+    max-width: min(60vw,1200px);
+    color: #ffffffdc;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    
+}
