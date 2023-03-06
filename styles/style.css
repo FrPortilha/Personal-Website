@@ -8,11 +8,9 @@
     }
 }
 
-
 .fadeIn{
     animation: fadeIn 1s ease-in-out;
 }
-
 
 * {
     margin: 0;
@@ -33,7 +31,7 @@ body {
 }
 
 header {
-    font-size: max(20px,min(3vw,36px));
+    font-size: 3rem;
 }
 
 nav {
@@ -50,7 +48,7 @@ nav {
     border: none;
     color: rgb(234, 234, 234);
     cursor: pointer;    
-    font-size: max(20px,min(3vw,36px));
+    font-size: 3rem;
     padding: 0.2vh;
     font-weight: 100;
     transition: all 0.2s ease-in-out;
