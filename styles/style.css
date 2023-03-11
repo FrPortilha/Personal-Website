@@ -8,8 +8,24 @@
     }
 }
 
-.fadeIn{
+@keyframes fadeInFromT {
+    from {
+        opacity: 0;
+        transform: translateY(-100vh);
+    }
+
+    to {
+        opacity: 1;
+        transform: none;
+    }
+}
+
+.fadeIn {
     animation: fadeIn 1s ease-in-out;
+}
+
+.fadeInFromT {
+    animation: fadeInFromT 1s ease-in-out;
 }
 
 * {
@@ -86,6 +102,7 @@ nav ul {
     z-index: 1;
     flex-direction: column; /* Change the direction of the menu items */
     align-items: center; /* Align the menu items to the left */
+    justify-content: center;
     opacity: 0; /* Make the menu list invisible by default */
     
 }
@@ -106,13 +123,13 @@ nav ul li a {
     color: #fff;
     font-family: arial;
     text-decoration: none;
-    
+
     transition: all 0.3s ease-in-out;
 }
 
 nav ul li a:hover {
     padding: 60px 5px ;
-    font-size: 4rem;
+    font-size: 4.5rem;
     color: rgb(244, 188, 140);
 }
 
