@@ -61,33 +61,31 @@
              -o-transform: none;
                     transform: none;
 }
-.greet {
-    position: relative;
-    top: 7vh;
-    padding: 1vh;
-    font-size:  min(56px,8vw);
-    text-align: center;
+
+.box {
     display: flex;
     justify-content: center;
+}
+.greet {
+    position: sticky;
+    padding: 1vh;
+    top: 5vh;
+    font-size:  2.5rem;
+    display: inline-flex;
     color: #e6e6e6;
     font-family:Georgia, 'Times New Roman', Times, serif;
     animation-duration: 2.5s;
-    
 }
 
 .intro {
-    position: relative;
-    top: 10.5vh;
+    position: sticky;
     padding: 1vh;
-    font-size:  min(60px,11vw);
-    text-align: left;
-    display: flex;
-    justify-content: center;
+    font-size: 3.5rem;
+    display: inline-flex;
     color: #de6f00;
     font-family:'Times New Roman', Times, serif;
     animation-duration: 3.5s;
 }
-
 
 .intro a1{
     transition: all 0.2s ease-in-out ;
@@ -97,27 +95,52 @@
     color: #ffb468;
 }
 
+.typewrite-greet {
+    display: inline-block;
+    width:0;
+    white-space: nowrap;
+    overflow: hidden;
+    border-right: 5px solid transparent;
+    animation: 
+        typing 2.5s steps(27) .2s forwards,
+        cursor .4s step-end 8 alternate;
+}
+
+.typewrite-intro {
+    display: inline-block;
+    width:0;
+    white-space: nowrap;
+    overflow: hidden;
+    border-right: 5px solid transparent;
+    animation: 
+        typing 1.4s steps(14) 3.5s forwards,
+        cursor .4s step-end 10 alternate 3.5s;
+}
+
+@keyframes cursor {
+    50% {border-color: rgba(255, 255, 255, 0.644);}
+}
+
+@keyframes typing {
+    to {width : 100%}
+}
 .info {
-    position: relative;
-    top: 15vh; 
+    position: flex;
     padding: 1vh;
-    font-size: 40px;
+    font-size: 2.5rem;
     text-align: center;
-    justify-self: center;
+    justify-content: center;
     display: flex;
     padding-left: 15vw;
     padding-right: 15vw;
     color: #cecece;
     font-family:'Times New Roman', Times, serif;
     list-style: none;
-    animation-duration: 4s;
-}
-
-.info .show{
-    display:flex
+    animation-duration: 5s;
 }
 
 .info a1{
+    color: #fcd9b5;
     transition: all 0.2s ease-in-out;
 }
 
@@ -125,6 +148,40 @@
     color: #ffb468;
     font-size:102%
 }
+
+.box-definition {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    padding-top: 20vh;
+    font-size: 1.5rem;
+}
+
+.box-definition definition {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, 0);
+    color: #faf7f793;
+    text-align: center;
+    width: min(1000px,80vw);
+    opacity: 0;
+}
+
+.box-definition definition.fade {
+    animation: fade 1s forwards;
+}
+
+.box-definition definition a1 {
+    color: #fcd9b5;
+}
+
+@keyframes fade {
+    from{ opacity: 0;}
+    to { opacity: 1;}
+}
+
+    
 
 .section-home:nth-of-type(1){
     height: 100vh;
