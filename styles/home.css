@@ -28,14 +28,9 @@
     animation: fadeInFromR 2s ease-out
 }
 
-.fadeInFromB {
-    animation: fadeInFromB 2s ease-out;
-}
-
 .section-home {
-    display:block;
+    display: relative;
     width: 100vw;
-    height: 80vh;
     justify-content: center;
 }
 
@@ -135,7 +130,8 @@
     color: #cecece;
     font-family:'Times New Roman', Times, serif;
     list-style: none;
-    animation-duration: 5s;
+    opacity: 0;
+    animation: fadeInFromB 6s ease-out  forwards;
 }
 
 .info a1{
@@ -154,6 +150,7 @@
     justify-content: center;
     padding-top: 20vh;
     font-size: 1.5rem;
+    font-family:'Times New Roman', Times, serif;
 }
 
 .box-definition definition {
@@ -180,21 +177,45 @@
     to { opacity: 1;}
 }
 
+.text {
+    font-size: 2rem;
+    color: #01021b;
+    text-align: center;
+    padding-top: 5vh;
+    font-family:'Times New Roman', Times, serif;
+
+}
+
+.text a {
+    text-decoration: none;
+    color: #2c0052;
+}
+
 .section-home svg {
     display: block;
 }    
 
+#svg1 {
+    position: end;
+}
+
 .section-home:nth-of-type(1){
-    height: 115vh;
+    height: 90h;
 }
 
 .section-home:nth-of-type(2){
+    display: block;
+    padding: 0;
+}
+
+.section-home:nth-of-type(3){
     height:60vh;
     background-color: #c5c5d2;
     color: rgb(112, 152, 32);
 }
 
-.section-home:nth-of-type(3){
+.section-home:nth-of-type(4){
+    height:100vh;
     background-color: #242539;
     color: rgb(131, 183, 29);
 }

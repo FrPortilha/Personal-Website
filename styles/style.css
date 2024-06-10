@@ -183,3 +183,9 @@ h1 {
     cursor: pointer;
     border: none;
 }
+
+footer {
+    display: block;
+    height: 20vh;
+    background-color: #01021b;
+}
