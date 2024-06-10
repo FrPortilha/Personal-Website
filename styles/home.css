@@ -35,7 +35,7 @@
 .section-home {
     display:block;
     width: 100vw;
-    height: 100vh;
+    height: 80vh;
     justify-content: center;
     font-size:  min(56px,10vw);
 }
@@ -63,14 +63,12 @@
 }
 .greet {
     position: relative;
-    top: 15vh;
-    left: 12vw;
-    padding-left: 1vw;
-    padding-right: 12vw;
+    top: 7vh;
+    padding: 1vh;
     font-size:  min(56px,8vw);
-    text-align: left;
+    text-align: center;
     display: flex;
-    justify-content: left;
+    justify-content: center;
     color: #e6e6e6;
     font-family:Georgia, 'Times New Roman', Times, serif;
     animation-duration: 2.5s;
@@ -79,14 +77,12 @@
 
 .intro {
     position: relative;
-    top: 20vh;
-    left: 15vw;
-    padding-left: 1vw;
+    top: 10.5vh;
+    padding: 1vh;
     font-size:  min(60px,11vw);
-    font-weight: bolder;
     text-align: left;
     display: flex;
-    justify-content: left;
+    justify-content: center;
     color: #de6f00;
     font-family:'Times New Roman', Times, serif;
     animation-duration: 3.5s;
@@ -103,14 +99,14 @@
 
 .info {
     position: relative;
-    top: 25vh; 
-    left: 0vw;
-    padding-left: 12vw;
+    top: 15vh; 
+    padding: 1vh;
     font-size: 40px;
-    text-align: left;
+    text-align: center;
+    justify-self: center;
     display: flex;
-    justify-content: left;
-    max-width: min(70vw,1200px);
+    padding-left: 15vw;
+    padding-right: 15vw;
     color: #cecece;
     font-family:'Times New Roman', Times, serif;
     list-style: none;
@@ -131,14 +127,16 @@
 }
 
 .section-home:nth-of-type(1){
+    height: 100vh;
     color: olivedrab;
 }
 
 .section-home:nth-of-type(2){
+    background-color: #242539;
     color: rgb(112, 152, 32);
 }
 
 .section-home:nth-of-type(3){
-    background-color: #484848;
+    background-color: #e5e5fb;
     color: rgb(131, 183, 29);
 }
