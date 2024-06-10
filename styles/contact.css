@@ -10,6 +10,7 @@
 }
 
 .contact-text a {
+    padding: 50px;
     color: #e6cdb4dc;
     transition: all 0.1s ease-in-out;
 }
@@ -24,11 +25,10 @@
     font-size: 120%;
     font-weight: 300;
     color: #ff860ce0;
-    
 }
 
 .contact-text li{
-    margin-bottom: 5vh;
+    margin-bottom: 15px;
     line-height: 5vh;
 }
 

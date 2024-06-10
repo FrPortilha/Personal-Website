@@ -1,0 +1,38 @@
+    
+
+ul { 
+    display: flex;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: #01021b;
+    color: #fff;
+    padding: 20px;
+    z-index: 1;
+    flex-direction: column; /* Change the direction of the menu items */
+    align-items: center; /* Align the menu items to the left */
+    justify-content: center;
+}
+
+ul li {
+    margin-bottom: 50px; /* Add a margin-bottom between the menu items */
+    font-weight: bold; /* Make the menu items bold */
+    text-decoration: none;
+}
+
+
+ul li a {
+    font-size: 4rem; /* Increase the font size of the menu items */
+    color: #fff;
+    font-family: arial;
+    text-decoration: none;
+    transition: all 0.3s ease-in-out;
+}
+
+ul li a:hover {
+    padding: 60px 5px ;
+    font-size: 4.5rem;
+    color: rgb(244, 188, 140);
+}

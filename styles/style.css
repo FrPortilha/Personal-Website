@@ -96,7 +96,7 @@ nav ul {
     left: 0;
     width: 100vw;
     height: 100vh;
-    background-color: #000c20ef;
+    background-color: #01021be6;
     color: #fff;
     padding: 20px;
     z-index: 1;
@@ -123,7 +123,6 @@ nav ul li a {
     color: #fff;
     font-family: arial;
     text-decoration: none;
-
     transition: all 0.3s ease-in-out;
 }
 
